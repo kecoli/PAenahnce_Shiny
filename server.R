@@ -5,14 +5,13 @@
 
 
 library(shiny)
-
+#install.packages("PerformanceAnalytics",repos="http://R-Forge.R-project.org")
+library(PerformanceAnalytics)
 source("table.Performance.R")
 source("chooser.R")
 count <- 0
 # Define server logic for random distribution application
 shinyServer(function(input, output) {
-			
-			
 			inputTextarea <- function(inputId,  label="",value="", nrows=10, ncols=10) {
 				tagList(
 						singleton(tags$head(tags$script(src = "textarea.js"))),
@@ -81,7 +80,8 @@ shinyServer(function(input, output) {
 #						}
 #						else{
 						if(input$dataset==F){
-							mydata <- mydata.raw <- read.csv("crsp.short.6.csv")
+							mydata <- mydata.raw <- read.csv("http://www.stat.washington.edu/~kirkli/Doug/crsp.short.6.csv")
+              
 							rownames(mydata) <- mydata[,1]
 							colnames(mydata.raw)[1] <- "date"
 							mydata <- mydata[,-1]

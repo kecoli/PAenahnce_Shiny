@@ -417,9 +417,8 @@ table.Performance.output.shiny <- function(R,metricsOptArgVal, metrics=NULL,metr
 	
 }
 ###################################Example###################################
-library(PerformanceAnalytics)
-data(edhec)
-
+# library(PerformanceAnalytics,lib="C:/R/R-3.1.0/library_forge")
+# data(edhec)
 # Example 1: start with NULL specification
 #res <- table.Performance(edhec,verbose=T)
 # Example 2: start with Var and ES

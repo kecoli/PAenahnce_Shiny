@@ -5,7 +5,6 @@
 
 library(shiny)
 library(shinyIncubator)
-
 source("table.Performance.R")
 source("chooser.R")
 # Define UI for random distribution application 
@@ -29,12 +28,12 @@ shinyUI(fluidPage(
 												c(Comma=',',
 														Semicolon=';',
 														Tab='t'),
-												'Comma'),
+												','),
 										radioButtons('quote1', 'Quote',
 												c(None='',
 														'Double Quote'='"',
 														'Single Quote'="'"),
-												'Double Quote'),
+												'"'),
 										br()		
 								),
 #						actionButton("goButton1", "Go!"),

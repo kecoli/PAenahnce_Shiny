@@ -3,27 +3,27 @@
 # Author: kirkli
 ###############################################################################
 
-
-rm(list=ls())
-# install.packages('devtools')
-# install.packages("shiny")
-# devtools::install_github('shiny-incubator', 'rstudio')
-# install.packages("Rglpk")
-# setwd("C:/Dropbox/doug/MVO")
-if(!"devtools" %in% rownames(installed.packages())) {install.packages('devtools')}
-# In linux, if error occurs, check R-Curl. 
-if(!"shiny" %in% rownames(installed.packages())) {install.packages('shiny')}
-if(!"shinyIncubator" %in% rownames(installed.packages())) {devtools::install_github("shiny-incubator", "rstudio")}
-if(!"Rglpk" %in% rownames(installed.packages())) {install.packages('Rglpk')}
-if(!"xts" %in% rownames(installed.packages())) {install.packages('xts')}
-if(!"corpcor" %in% rownames(installed.packages())) {install.packages('corpcor')}
-if(!"quadprog" %in% rownames(installed.packages())) {install.packages('quadprog')}
-
-library(shinyIncubator)
-library(shiny)
-library(quadprog)
-library(Rglpk)
-library(xts)
+#
+#rm(list=ls())
+## install.packages('devtools')
+## install.packages("shiny")
+## devtools::install_github('shiny-incubator', 'rstudio')
+## install.packages("Rglpk")
+## setwd("C:/Dropbox/doug/MVO")
+#if(!"devtools" %in% rownames(installed.packages())) {install.packages('devtools')}
+## In linux, if error occurs, check R-Curl. 
+#if(!"shiny" %in% rownames(installed.packages())) {install.packages('shiny')}
+#if(!"shinyIncubator" %in% rownames(installed.packages())) {devtools::install_github("shiny-incubator", "rstudio")}
+#if(!"Rglpk" %in% rownames(installed.packages())) {install.packages('Rglpk')}
+#if(!"xts" %in% rownames(installed.packages())) {install.packages('xts')}
+#if(!"corpcor" %in% rownames(installed.packages())) {install.packages('corpcor')}
+#if(!"quadprog" %in% rownames(installed.packages())) {install.packages('quadprog')}
+#
+#library(shinyIncubator)
+#library(shiny)
+#library(quadprog)
+#library(Rglpk)
+#library(xts)
 
 # ##
 # load("crsp.short.Rdata")
@@ -42,11 +42,11 @@ library(xts)
 # 
 # head(test)
 # head(test2)
-
-result.folder <<- getwd()
-code.folder <<- getwd()
-setwd(code.folder)
-runApp()
+#
+#result.folder <<- getwd()
+#code.folder <<- getwd()
+#setwd(code.folder)
+#runApp()
 
 
 
