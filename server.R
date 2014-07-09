@@ -3,7 +3,8 @@
 # Author: KirkLi
 ###############################################################################
 library(shiny)
-library(PerformanceAnalytics,lib="C:/R/R-3.1.0/library_forge")
+library(PerformanceAnalytics)
+#,lib="C:/R/R-3.1.0/library_forge"
 source("table.Performance.R")
 source("chooser.R")
 count <- 0
@@ -126,8 +127,6 @@ shinyServer(function(input, output) {
                             cbind(metrics,res) 
                         } else return()
                     })
-            
-            
             output$downloadData <- downloadHandler(
                     # This function returns a string which tells the client
                     # browser what name to use when saving the file.
