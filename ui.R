@@ -9,8 +9,6 @@ source("table.Performance.R")
 source("chooser.R")
 # Define UI for random distribution application 
 
-
-
 shinyUI(fluidPage(
 				
 				titlePanel("Performance Metric"),

@@ -19,11 +19,9 @@
 #if(!"corpcor" %in% rownames(installed.packages())) {install.packages('corpcor')}
 #if(!"quadprog" %in% rownames(installed.packages())) {install.packages('quadprog')}
 #
-#library(shinyIncubator)
-#library(shiny)
-#library(quadprog)
-#library(Rglpk)
-#library(xts)
+library(shinyIncubator)
+library(shiny)
+library(xts)
 
 # ##
 # load("crsp.short.Rdata")
@@ -43,17 +41,17 @@
 # head(test)
 # head(test2)
 #
-#result.folder <<- getwd()
-#code.folder <<- getwd()
-#setwd(code.folder)
-#runApp()
+result.folder <<- getwd()
+code.folder <<- getwd()
+setwd(code.folder)
+runApp()
 
 
-
-
-
-
-
+#
+#library(shinyapps)
+#deployApp()
+#
+#
 
 
 
